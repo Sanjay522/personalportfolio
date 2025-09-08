@@ -3,7 +3,7 @@ import testImage from "../assets/image.png";
 
 const About = () => {
   return (
-    <section
+    <div
       id="about"
       className="py-16 bg-gray-100 flex flex-col justify-center items-center"
     >
@@ -12,7 +12,6 @@ const About = () => {
       </h1>
 
       <div className="max-w-5xl w-full px-4 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-        {/* Image */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-start">
           <img
             src={testImage}
@@ -21,7 +20,6 @@ const About = () => {
           />
         </div>
 
-        {/* Text */}
         <div className="w-full md:w-2/3 text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4">Hello, I'm Sanjay</h2>
           <p className="text-lg mb-4">
@@ -32,7 +30,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

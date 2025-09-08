@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,12 +7,6 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
-    const savedData = localStorage.getItem("contactForm");
-    if (savedData) {
-      setFormData(JSON.parse(savedData));
-    }
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <section
+    <div
       id="contact"
       className="py-20 min-h-screen flex flex-col items-center justify-center px-4 "
     >
@@ -78,7 +72,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 
