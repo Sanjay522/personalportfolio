@@ -1,5 +1,5 @@
 import Navbar from "./component/Navbar";
-import './app.css';
+import './index.css';
 
 
 import { DataProvider } from "./context/PortfolioContext";
