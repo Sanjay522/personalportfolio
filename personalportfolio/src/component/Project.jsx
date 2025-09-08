@@ -16,7 +16,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="w-[400px] h-[400px] bg-gray-100 rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
+              className="w-[400px] h-[400px]  rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
             >
               <img
                 src={project.image}

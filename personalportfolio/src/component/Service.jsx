@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 
-export default function Services() {
+const Services = () => {
   const { myServices } = useContext(PortfolioContext);
 
   return (
@@ -17,7 +17,7 @@ export default function Services() {
               key={index}
               className="w-72 flex flex-col items-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2"
             >
-                <img src={service.icon} alt=""  className="h-15"/>
+              <img src={service.icon} alt="" className="h-15" />
               <h3 className="text-2xl font-semibold mb-4 ">
                 {service.title}
               </h3>
@@ -28,4 +28,6 @@ export default function Services() {
       </div>
     </section>
   );
-}
+};
+
+export default Services;

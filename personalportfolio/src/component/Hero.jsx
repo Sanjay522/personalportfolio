@@ -1,4 +1,6 @@
-export default function HeroSection() {
+import React from "react";
+
+const HeroSection = () => {
   return (
     <div className="w-[95vw] m-auto flex flex-col items-center h-[70svh] mt-80">
       <h1 className="text-5xl md:text-7xl font-bold text-gray-800">
@@ -26,4 +28,6 @@ export default function HeroSection() {
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;

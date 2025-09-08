@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 
-export default function Footer() {
-  const { footerData } = useContext(PortfolioContext)
+const Footer = () => {
+  const { footerData } = useContext(PortfolioContext);
 
   return (
     <footer className="bg-blue-600 text-white py-12">
@@ -13,7 +13,7 @@ export default function Footer() {
           <p className="text-sm md:text-base">{footerData.tagline}</p>
         </div>
 
-\        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <h4 className="font-semibold text-lg">Quick Links</h4>
           <div className="flex flex-col gap-1">
             {footerData.quickLinks.map((link, idx) => (
@@ -40,4 +40,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
